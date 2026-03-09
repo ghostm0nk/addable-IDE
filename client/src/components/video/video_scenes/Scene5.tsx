@@ -8,7 +8,7 @@ type Scene5Props = {
 export function Scene5({ onWaitlistClick }: Scene5Props) {
   return (
     <motion.div
-      className="absolute inset-0 bg-black flex flex-col items-center justify-center text-white"
+      className="absolute inset-0 bg-black flex flex-col items-center justify-center text-white overflow-hidden"
       {...sceneTransitions.morphExpand}
     >
       <motion.div
@@ -38,7 +38,7 @@ export function Scene5({ onWaitlistClick }: Scene5Props) {
 
         <motion.button
           onClick={onWaitlistClick}
-          className="mt-16 bg-white text-black font-display font-bold text-3xl px-20 py-6 rounded-full shadow-[0_14px_44px_rgba(255,255,255,0.24)] hover:scale-[1.02] transition-transform"
+          className="mt-24 bg-white text-black font-display font-bold text-3xl px-20 py-6 rounded-full shadow-[0_14px_44px_rgba(255,255,255,0.24)] hover:scale-[1.02] transition-transform"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.45, duration: 0.8 }}
